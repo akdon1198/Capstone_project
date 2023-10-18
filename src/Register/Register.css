@@ -1,0 +1,95 @@
+.full-container{
+    display: flex;
+    height: 100vh;
+}
+
+.left-container{
+    width: 40%;
+    overflow: hidden;
+}
+
+.left-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.right-container{
+    width: 60%;
+    display: flex;
+    background-color: black;
+}
+
+.form{
+    width: 48%;
+    margin: auto;
+    text-align: center;
+}
+
+.form h1{
+    color: #72DB73;
+    font-family: Single Day;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form h3{
+    margin-bottom: 1.5rem;
+}
+
+.form input{
+    width: 100%;
+    border-radius: 3.816px;
+    /* border: 1px solid #F00; */
+    border: none;
+    outline: none;
+    background: #292929;
+    height: 55.869px;
+    padding-left: 10px;
+}
+
+.form input::placeholder{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.401px;
+}
+.form .input{
+    margin-bottom: 10px;
+}
+.form .input p{
+    color: #F00;
+    letter-spacing: 0.401px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.form button{
+    height: 45px;
+    width: 100%;
+    border-radius: 28px;
+    background: #72DB73;
+    font-family: Roboto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 0.58px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.form p{
+    text-align: left;
+    color: #7C7C7C;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+}
+
+.form p span{
+    font-size: inherit;
+    color: #72DB73;
+    letter-spacing: 0.36px;
+    margin-left: 2px;
+}
