@@ -61,6 +61,7 @@ function Register(){
         <div className="full-container">
             <div className="left-container">
                 <img src={bannerimg} alt=""/>
+                <h1>Discover new things on Superapp</h1>
             </div>
             <div className="right-container">
                 <div className="form">

@@ -1,0 +1,209 @@
+.weathernews-container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weathernews-left{
+    width: 40%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weathernews-lefttop{
+    width: 100%;
+    height: 60%;
+    border-radius: 33.428px;
+    background: #5746EA;
+    display: flex;
+    position: relative;
+}
+
+.weathernews-lefttop div{
+    width: 25%;
+    height: 90%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.weathernews-lefttop div img{
+    height: 100%;
+    width: 100%;
+}
+
+.weathernews-lefttop .userdetail{
+    margin-top: 2rem;
+    margin-left: 3rem; 
+}
+
+.weathernews-lefttop .userdetail h2{
+    font-family: Roboto;
+    font-size: 25px;
+    letter-spacing: 0.739px;
+    margin-bottom: 1rem;
+}
+
+.weathernews-lefttop .userdetail h1{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1.443px;
+    z-index: 2;
+}
+
+.weathernews-lefttop .catdetail{
+    width: 55%;
+    height: 40%;
+    position: absolute;
+    top:8rem;
+    overflow: auto;
+    left: 11rem;
+}
+
+.weathernews-lefttop .catdetail button{
+    background-color: #9F94FF;
+    font-weight: 400;
+    letter-spacing: 0.563px;
+}
+
+.weathernews-leftbottom{
+    width: 100%;
+    height: 35%;
+    border-radius: 33.428px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weathernews-leftbottom > .top{
+    width: 100%;
+    border-radius: 33.428px 33.428px 0px 0px;
+    background: #FF4ADE;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weathernews-leftbottom > .top h1{
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.weathernews-leftbottom > .bottom{
+    width: 100%;
+    background: #101744;
+    height: 75%;
+    border-radius:  0px 0px 33.428px 33.428px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weathernews-leftbottom > .bottom > div{
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weathernews-leftbottom > .bottom > div img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.weathernews-leftbottom > .bottom > div h1{
+    font-size: 50px;
+    font-family: Roboto;
+}
+
+.weathernews-leftbottom > .bottom > div .vector{
+    height: 1.5rem;
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.weathernews-leftbottom > .bottom > div > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+
+.weathernews-leftbottom > .bottom > div > div span{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.weathernews-right{
+    width: 20%;
+    height: 75%;
+    margin-left: 4rem;
+}
+
+.weathernews-right .top{
+    height: 60%;
+    width: 100%;
+    border-radius: 19px 19px 0px 0px;
+    position: relative;
+}
+
+.weathernews-right .top img{
+    height: 100%;
+    width: 100%;
+}
+
+.weathernews-right .top div{
+    background: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    height: 31%;
+    position: absolute;
+    top: 11rem;
+}
+
+.weathernews-right .top div h1{
+    font-family: Roboto;
+    font-size: 20px;
+    max-width: 80%;
+    margin-left : 1rem;
+    margin-top : 1rem;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+}
+
+.weathernews-right .top div p{
+    font-family: Roboto;
+    font-size: 13.249px;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 4px;
+}
+
+.weathernews-right .bottom{
+    height: 40%;
+    width: 100%;
+    border-radius: 0px 0px 19px 19px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: auto;
+}
+
+.weathernews-right .bottom p{
+    color: #272727;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 13px;
+    max-width: 80%;
+    position: absolute;
+    top:1rem;
+}
