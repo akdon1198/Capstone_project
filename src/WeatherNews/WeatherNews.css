@@ -5,29 +5,145 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.notes-container{
+    width: 13rem;
+    height: 17rem;
+    border-radius: 19px;
+    background: #F1C75B;
+    position: absolute;
+    top: 0px;
+    left: 20rem;
+}
+.notes-container > textarea{
+    width: 80%;
+    height: 75%;
+    background-color: inherit;
+    position: relative;
+    top : 2rem;
+    left: 1.2rem;
+    color : #000;
+    font-size: 14px;
+    letter-spacing: 0.84px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.notes-container > h1{
+    color : #000;
+    font-size: 1.2rem;
+    left: 20px;
+    font-weight: 600;
+    top: 15px;
+    position: relative;
+    letter-spacing: 0.76px;
 }
 
 .weathernews-left{
-    width: 40%;
+    width: 55%;
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+}
+
+.timer-container{
+    width: 78%;
+    height: 40%;
+    border-radius: 19px;
+    background-color: #1E2343;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer-container .timercountdown-cont{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.timer-container .timercountdown-cont img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.timer-container .settimer-cont{
+    width: 16rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-container .settimer-cont .top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer-container .settimer-cont .top h2{
+    color: #949494;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+}
+
+.timer-container .settimer-cont .middle{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer-container .settimer-cont .middle h2{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.timer-container .settimer-cont .bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.timer-container .settimer-cont .bottom button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #FF6A6A;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    letter-spacing: 1.24px;
 }
 
 .weathernews-lefttop{
-    width: 100%;
-    height: 60%;
-    border-radius: 33.428px;
+    width: 45%;
+    height: 40%;
+    border-radius: 19px;
     background: #5746EA;
     display: flex;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .weathernews-lefttop div{
     width: 25%;
     height: 90%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
 }
 
@@ -37,51 +153,60 @@
 }
 
 .weathernews-lefttop .userdetail{
-    margin-top: 2rem;
-    margin-left: 3rem; 
+    margin-top: 1rem;
+    margin-left: 1rem; 
 }
 
 .weathernews-lefttop .userdetail h2{
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    min-width: 5rem;
+    margin-bottom: 6px;
     letter-spacing: 0.739px;
-    margin-bottom: 1rem;
 }
 
 .weathernews-lefttop .userdetail h1{
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1.443px;
     z-index: 2;
 }
 
 .weathernews-lefttop .catdetail{
-    width: 55%;
+    width: 60%;
     height: 40%;
     position: absolute;
-    top:8rem;
+    top:4.3rem;
     overflow: auto;
-    left: 11rem;
+    /* background-color: yellow; */
+    left: 5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .weathernews-lefttop .catdetail button{
     background-color: #9F94FF;
     font-weight: 400;
+    width: 4rem;
+    height: 1.4rem;
+    margin: 10px;
+    font-size: 0.5rem;
     letter-spacing: 0.563px;
 }
 
 .weathernews-leftbottom{
-    width: 100%;
-    height: 35%;
-    border-radius: 33.428px;
+    width: 45%;
+    height: 20%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .weathernews-leftbottom > .top{
     width: 100%;
-    border-radius: 33.428px 33.428px 0px 0px;
+    border-radius: 19px 19px 0px 0px;
     background: #FF4ADE;
     height: 25%;
     display: flex;
@@ -91,7 +216,7 @@
 
 .weathernews-leftbottom > .top h1{
     font-family: Roboto;
-    font-size: 35px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -99,7 +224,7 @@
     width: 100%;
     background: #101744;
     height: 75%;
-    border-radius:  0px 0px 33.428px 33.428px;
+    border-radius:  0px 0px 19px 19px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,19 +240,24 @@
 }
 
 .weathernews-leftbottom > .bottom > div img{
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.weathernews-leftbottom > .bottom > div h3{
+    font-size: 0.7rem;
 }
 
 .weathernews-leftbottom > .bottom > div h1{
-    font-size: 50px;
+    font-size: 1.5rem;
     font-family: Roboto;
+    margin-top: 2px;
 }
 
 .weathernews-leftbottom > .bottom > div .vector{
-    height: 1.5rem;
-    width: 1rem;
-    margin-right: 1rem;
+    height: 1rem;
+    width: 0.5rem;
+    margin-right: 5px;
 }
 
 .weathernews-leftbottom > .bottom > div > div{
@@ -137,15 +267,14 @@
 
 }
 
-.weathernews-leftbottom > .bottom > div > div span{
+.weathernews-leftbottom > .bottom > div > div p{
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .weathernews-right{
     width: 20%;
     height: 75%;
-    margin-left: 4rem;
 }
 
 .weathernews-right .top{

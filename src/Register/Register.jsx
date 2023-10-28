@@ -1,7 +1,9 @@
 import "./Register.css"
 import { useState } from "react"
 import bannerimg from "../images/banner.jpg"
+import { useNavigate} from "react-router-dom"
 function Register(){
+    let history = useNavigate()
     const[nameerr, setnameerr] = useState("")
     const[usernameerr, setusernameerr] = useState("")
     const[emailerr, setemailerr] = useState("")
@@ -54,6 +56,7 @@ function Register(){
         }
         if(flag){
             localStorage.setItem("userdata", JSON.stringify(field))
+            history("/category")
         }
     }
     return(

@@ -3,12 +3,13 @@ import x from "../images/X.png"
 import warningimg from "../images/warningpng.png"
 import moviedataconst , {moviechoosenconst} from "../Constant.js"
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 function Category(){
     const[globalindex, setglobalindex] = useState(-1)
     const[moviedata, setmoviedata] = useState(moviedataconst)
     const[moviechoosen, setmoviechoosen] = useState(moviechoosenconst)
     const[warning, setwarning] = useState(false)
-    
+    let navigate = useNavigate()
     function handleclick(index){
         setwarning(false)
         if(moviedata[index].border == "5px solid white"){
@@ -55,6 +56,15 @@ function Category(){
 
     function handlewarning(){
         globalindex > 1 ? setwarning(false) : setwarning(true)
+        let arr = []
+        if(globalindex > 1){
+            for(let i = 0; i < 9; i++){
+                if(moviechoosen[i] == null) break;
+                arr.push(moviedata[moviechoosen[i].catindex].name)
+            }
+            localStorage.setItem("movies", JSON.stringify(arr))
+            navigate("/weathernews")
+        }
     }
 
     return(
